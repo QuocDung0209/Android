@@ -1,4 +1,19 @@
-//#1
+fun convertString(x:String):String
+{
+    var result:String = ""
+    for(i in x){
+        when(i){
+            'G'->result += "C"
+            'C'->result += "G"
+            'T'->result += "A"
+            'A'->result += "U"
+            else -> return "Error DNA strand!"
+        }
+    }
+    return result
+}
+
+//#2
 fun convertName(name:String):String{
     var acronym = name
     val arrName = acronym.split(" ")
@@ -10,7 +25,7 @@ fun convertName(name:String):String{
     return acronym
 }
 
-//#2
+//#3
 fun convertNumber2String(number:Int):String{
     var temp = number
     var word = ""
@@ -25,28 +40,16 @@ fun convertNumber2String(number:Int):String{
     return word
 }
 
-//#3
-fun convertString(x : String):String
-{
-    var result:String=""
-    
-    for( i in x){
-        when(i){
-            'G'->result += "C"
-            'C'->result += "G"
-            'T'->result += "A"
-            'A'->result += "U"
-            else -> return "Error DNA strand!"
-        }
-    }
-    return result
-}
-
 fun main() {
-    var name = "Portable Network Graphics"
-    println(name)
-    println(convertName(name))
-    println(convertNumber2String(0))
-    var x ="GCAT"
+    //#1
+    var x = "GTCTACTGAT"
     println(convertString(x))
+
+    //#2
+    var name = "Portable Network Graphics"
+    println(convertName(name))
+
+    //#3
+    var number = 35
+    println(convertNumber2String(number))
 }
