@@ -1,0 +1,52 @@
+//#1
+fun convertName(name:String):String{
+    var acronym = name
+    val arrName = acronym.split(" ")
+    acronym = ""
+    for(item in arrName){
+        if(item.length > 0)
+            acronym += item[0] 
+    }
+    return acronym
+}
+
+//#2
+fun convertNumber2String(number:Int):String{
+    var temp = number
+    var word = ""
+    if(temp % 3 == 0)
+    	word += "Pling"
+    if(temp % 5 == 0)
+    	word += "Plang"
+    if(temp % 7 == 0)
+    	word += "Plong"
+    if((temp % 3 != 0) && (temp % 5 != 0) && (temp % 7 != 0))
+    	word += number.toString()
+    return word
+}
+
+//#3
+fun convertString(x : String):String
+{
+    var result:String=""
+    
+    for( i in x){
+        when(i){
+            'G'->result += "C"
+            'C'->result += "G"
+            'T'->result += "A"
+            'A'->result += "U"
+            else -> return "Error DNA strand!"
+        }
+    }
+    return result
+}
+
+fun main() {
+    var name = "Portable Network Graphics"
+    println(name)
+    println(convertName(name))
+    println(convertNumber2String(0))
+    var x ="GCAT"
+    println(convertString(x))
+}
