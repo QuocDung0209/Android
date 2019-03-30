@@ -1,2 +1,0 @@
-# Android
-Homework Android Kotlin 
