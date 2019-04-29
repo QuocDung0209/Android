@@ -10,7 +10,7 @@ class FakeService {
                 "        {\n" +
                 "            \"vote_count\": 164,\n" +
                 "            \"id\": 456740,\n" +
-                "            \"video\": false,\n" +
+                "            \"video\": true,\n" +
                 "            \"vote_average\": 5.2,\n" +
                 "            \"title\": \"Hellboy\",\n" +
                 "            \"popularity\": 373.147,\n" +

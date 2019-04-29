@@ -40,6 +40,8 @@ class MoviesActivity : AppCompatActivity() {
             intent.putExtra(MOVIE_TITLE_KEY, movies[position].original_title)
             intent.putExtra(MOVIE_OVERVIEW_KEY, movies[position].overview)
             intent.putExtra(MOVIE_BACKDROP_KEY, movies[position].backdrop_path)
+            intent.putExtra(MOVIE_VOTE_KEY, movies[position].vote_average)
+            intent.putExtra(MOVIE_VIDEO_KEY, movies[position].video)
             intent.putExtra(MOVIE_DATE_KEY, DateFormat.getDateInstance().format(movies[position].release_date).toString())
             startActivity(intent)
 
