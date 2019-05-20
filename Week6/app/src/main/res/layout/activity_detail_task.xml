@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Title:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/tvTitle1"
+    />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvTitle1"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+    />
+    <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Completed: "
+            android:id="@+id/tvCompleted"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginVertical="10dp"
+    />
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox"
+            android:layout_toRightOf="@+id/tvCompleted"
+            android:layout_alignBottom="@+id/tvCompleted"
+            android:layout_marginLeft="20dp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAssigned1"
+            android:layout_below="@+id/tvCompleted"
+            android:text="Assigned to: "
+            android:textSize="25sp"
+            android:textStyle="bold"
+    />
+    <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/tvAssigned"
+            android:text="Unassigned"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/tvAssigned1"
+            android:layout_alignBaseline="@+id/tvAssigned1"
+    />
+    <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/tvAssigned1"
+            android:layout_centerHorizontal="true"
+    />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave"
+            android:text="Save"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+    />
+
+</RelativeLayout>
