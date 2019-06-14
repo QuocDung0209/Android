@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+    >
+        <EditText android:layout_width="250dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:id="@+id/editTitle_User"
+                  android:hint="User"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+        />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAdd"
+                android:layout_toRightOf="@+id/editTitle_User"
+                android:layout_toEndOf="@+id/editTitle_User"
+                android:layout_alignBaseline="@+id/editTitle_User"
+                android:layout_marginRight="15dp"
+                android:text="ADD"
+                android:backgroundTint="@color/colorPrimary"
+        />
+        <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/editTitle_User"
+                android:id="@+id/rvUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+        />
+
+    </RelativeLayout>
+</RelativeLayout>
