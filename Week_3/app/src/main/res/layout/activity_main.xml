@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity" android:background="@android:color/background_light">
+
+    <TextView
+            android:text="Main screen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/textView3"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="#0000CD"
+            android:textColor="#FFFFFF"
+    />
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="200dp"
+    >
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/level_img"
+                android:id="@+id/imageView"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/name"
+                  android:text="Team_6"
+                  android:textColor="#0000FF"
+                  android:layout_below="@+id/imageView"
+                  android:textAlignment="center"
+                  android:textSize="25dp"
+        />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+    >
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBackgroud"
+                android:layout_above="@+id/btnTitle"
+                android:text="CHANGE BACKGROUND"
+        />
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnTitle"
+                android:text="CHANGE TITLE"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="0dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
