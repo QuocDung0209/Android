@@ -21,12 +21,27 @@
         </activity>
         <activity android:name=".ActivityLibrary">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity
+                android:name=".TimerActivity"
+                android:parentActivityName=".SettingActivity">
+        </activity>
+        <activity
+                android:name=".SettingTimerActivity"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:label="Setting">
+        </activity>
+        <activity
+                android:name=".SplashScreenActivity"
+                android:noHistory="true"
+                android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

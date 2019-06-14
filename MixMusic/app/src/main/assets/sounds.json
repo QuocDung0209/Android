@@ -6,7 +6,7 @@
     "hex": "#3D7EA5"
   },
   {
-    "name": "Chim Chich Choe",
+    "name": "Warbler",
     "photo": "chim_chich_choe",
     "music": "chim_chich_choe",
     "hex": "#595D66"
@@ -30,7 +30,7 @@
     "hex": "#8C9496"
   },
   {
-    "name": "Chim Vanh Khuyen",
+    "name": "Zosterops",
     "photo": "chim_vanh_khuyen",
     "music": "chim_vanh_khuyen",
     "hex": "#5B926A"
@@ -66,7 +66,7 @@
     "hex": "#575E66"
   },
   {
-    "name": "MotoBike",
+    "name": "MotorBike",
     "photo": "motorbike",
     "music": "motobike",
     "hex": "#343537"
@@ -107,5 +107,4 @@
     "music": "cat",
     "hex": "#9F9F9F"
   }
-
 ]

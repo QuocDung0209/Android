@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_setting.*
+import kotlinx.android.synthetic.main.activity_setting.view.*
 
 class SettingActivity : AppCompatActivity() {
 
@@ -12,6 +13,9 @@ class SettingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_setting)
 
+        btnTimer.setOnClickListener {
+            startActivity(Intent(this,TimerActivity::class.java))
+        }
         btnSettings.setBackgroundResource(R.drawable.circle_button_click)
 
         btnHomes.setOnClickListener{
