@@ -7,7 +7,6 @@
               android:layout_margin="7dp">
     <ImageView android:layout_width="170dp"
                android:layout_height="220dp"
-               android:src="@drawable/forest"
                android:id="@+id/imgPhoto"
                android:scaleType="fitXY"
     />

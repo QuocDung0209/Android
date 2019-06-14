@@ -25,7 +25,7 @@ class SoundPlayer(private val context: Context) {
     }
 
     fun initSounds() {
-        val msounds = arrayOf("dog", "stream", "dog", "stream", "dog", "stream", "stream")
+        val msounds = arrayOf("airplane", "chim_chich_choe", "ambulance", "dog", "stream", "chim_vanh_khuyen", "buffalo", "car", "cow", "elephant", "heavyrain", "motorbike", "sheep", "thunder", "train", "wind", "waterfall", "cat")
 
         for (msound in msounds) {
             val resourceId = context.resources.getIdentifier(msound, "raw", context.packageName)
@@ -34,8 +34,9 @@ class SoundPlayer(private val context: Context) {
         }
     }
 
-    fun changeSound(path: String): Int {
-        return mSoundPool.load(path, 1)
+    fun addSound(path: String): Boolean {
+        val soundId = mSoundPool.load(path, 1)
+        return mSoundArray.add(Song(path, soundId))
     }
 
     fun playSound(id: Long): Int {
