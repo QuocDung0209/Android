@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parentEven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:paddingTop="10dp">
+
+    <ImageView
+            android:id="@+id/poster"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="15dp"/>
+
+    <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white" />
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/year"
+            android:layout_toEndOf="@id/poster"
+            android:layout_toStartOf="@id/year"
+            android:textColor="#090f5e"
+            android:textSize="18sp"
+            android:textStyle="bold" android:layout_marginTop="-10dp"
+            android:layout_marginEnd="91dp"/>
+
+    <TextView
+            android:id="@+id/artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:text="todelete"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/poster" />
+
+    <TextView
+            android:id="@+id/album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artist"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/poster" />
+
+</RelativeLayout>

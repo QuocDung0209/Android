@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".SettingActivity"
+        android:orientation="vertical">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".SettingActivity">
+
+            <ImageView
+                    android:id="@+id/about_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:clickable="false"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/guitar" />
+
+            <ImageView
+                    android:id="@+id/about_face"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/doremon" />
+
+            <TextView
+                    android:id="@+id/app_about_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/about_face"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="Nhóm 6"
+                    android:textSize="30sp" />
+
+            <TextView
+                    android:id="@+id/app_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_about_label"
+                    android:gravity="center"
+                    android:text="Version: 1.0" />
+
+            <TextView
+                    android:id="@+id/about_app_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_version"
+                    android:gravity="center"
+                    android:text="MixMusic Project" />
+
+            <TextView
+                    android:id="@+id/about_git_site_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/about_app_author"
+                    android:layout_margin="25dp"
+                    android:gravity="center"
+                    android:text="GitHub: QuocDung0209"
+                    android:textSize="20sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_gravity="bottom"
+                 android:layout_height="wrap_content">
+        <ImageButton android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:src="@drawable/go_home"
+                     android:layout_gravity="left"
+                     android:layout_margin="10dp"
+                     android:scaleType="fitXY"
+                     android:background="@drawable/circle_bottom"
+                     android:padding="10dp"
+                     android:alpha="0.9"
+                     android:id="@+id/btnHomes"
+        />
+
+        <ImageButton android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:src="@drawable/library"
+                     android:scaleType="fitXY"
+                     android:layout_gravity="center"
+                     android:layout_margin="10dp"
+                     android:background="@drawable/circle_bottom"
+                     android:padding="10dp"
+                     android:alpha="0.9"
+                     android:id="@+id/btnLibrarys"
+        />
+
+        <ImageButton android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:src="@drawable/settings"
+                     android:scaleType="fitXY"
+                     android:background="@drawable/circle_bottom"
+                     android:padding="10dp"
+                     android:layout_gravity="right"
+                     android:layout_margin="10dp"
+                     android:alpha="0.9"
+                     android:id="@+id/btnSettings"
+        />
+    </FrameLayout>
+</FrameLayout>
