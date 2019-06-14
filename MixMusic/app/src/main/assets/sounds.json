@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Forest",
+    "photo": "forest",
+    "music": "stream",
+    "hex": "#6A7E43"
+  },
+  {
+    "name": "Chim Chich Choe",
+    "photo": "chim_chich_choe",
+    "music": "stream",
+    "hex": "#595D66"
+  },
+  {
+    "name": "Crow",
+    "photo": "con_qua",
+    "music": "stream",
+    "hex": "#717B49"
+  },
+  {
+    "name": "Dog",
+    "photo": "dog",
+    "music": "dog",
+    "hex": "#8A9A9A"
+  },
+  {
+    "name": "Stream",
+    "photo": "stream",
+    "music": "stream",
+    "hex": "#8C9496"
+  },
+  {
+    "name": "Chim Vanh Khuyen",
+    "photo": "chim_vanh_khuyen",
+    "music": "stream",
+    "hex": "#5B926A"
+  },
+  {
+    "name": "Cat",
+    "photo": "cat",
+    "music": "stream",
+    "hex": "#9F9F9F"
+  }
+]
