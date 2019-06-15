@@ -29,12 +29,12 @@
 
     <TextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/year"
             android:layout_toEndOf="@id/poster"
             android:layout_toStartOf="@id/year"
-            android:textColor="#090f5e"
+            android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" android:layout_marginTop="-10dp"
             android:layout_marginEnd="91dp"/>
@@ -45,6 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/title"
             android:text="todelete"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
             android:layout_marginEnd="10dp"
             android:layout_toEndOf="@id/poster" />
 
@@ -54,6 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/artist"
             android:layout_marginEnd="10dp"
+            android:textColor="@android:color/white"
             android:layout_toEndOf="@id/poster" />
 
 </RelativeLayout>

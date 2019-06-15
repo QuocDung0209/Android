@@ -16,6 +16,7 @@ import com.example.mixmusic.util.PrefUtil
 import kotlinx.android.synthetic.main.activity_timer.*
 import kotlinx.android.synthetic.main.content_timer.*
 import java.util.*
+import kotlin.system.exitProcess
 
 class TimerActivity : AppCompatActivity(){
     //Can 2 ham cai dat va xoa bo Timer
@@ -137,8 +138,8 @@ class TimerActivity : AppCompatActivity(){
         if(alarmSetTime > 0)
             secondsRemaining -= nowSeconds - alarmSetTime
 
-        if(secondsRemaining <= 0)
-            onTimerFinished()
+        if(secondsRemaining <= 0){
+            onTimerFinished()}
 
 
         //Resume where we left off
@@ -152,7 +153,6 @@ class TimerActivity : AppCompatActivity(){
 
     //Ket thuc Timer
     private fun onTimerFinished() {
-
         timerState = TimerState.Stopped
 
         //set the length of the timer to be the one set in SettingsActivity
